@@ -77,16 +77,16 @@ function calculateBMI() {
     document.getElementById('bmi').textContent = bmi.toFixed(2);
     const triangle = document.querySelector('.triangle');
     if(bmi < 18.5){
-      const new1 = bmi + 3;
+      const new1 = bmi + 2.5;
       triangle.style.left = `${new1}%`;
     } else if(bmi < 25) {
-      const new2 =bmi + ((bmi - 18.5) / 3);
+      const new2 = 22 + ((bmi - 18.5) * 2.3);
       triangle.style.left = `${new2}%`;
-    } else if(bmi < 30) {
-      const new3 = bmi + (bmi / 2);
+    } else if(bmi < 40) {
+      const new3 = 38 + ((bmi - 25) * 3.2);
       triangle.style.left = `${new3}%`;
     } else {
-      const new4 = bmi + (bmi / 2);
+      const new4 = 86.5;
       triangle.style.left = `${new4}%`;
     }
 
