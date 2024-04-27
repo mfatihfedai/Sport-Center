@@ -1,0 +1,660 @@
+.bg-blue {
+    background-color: rgba(53, 85, 146, 0);
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.d-flexr {
+  justify-content: center;
+  margin-right: 0 !important; 
+}
+
+.menu-top {
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+}
+  
+body, html {
+  background-color: white; 
+  margin: 0; 
+}
+
+.section-first {
+  background-image: url('../img/hero-man.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.item {
+  font-size: x-large;
+  font-weight: 700;
+  color: white;
+  margin: 2px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;  
+}
+
+.main-head {
+  color: white;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.main-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.section-info {
+  background-color: aliceblue;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  margin: 50px 30px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.section-second {
+  background-color: #f6f6f6;
+  height: max-content;
+  background:linear-gradient(-105deg, rgb(246,246,246) 58%, white 45%);
+}
+
+.head-our-class {
+  z-index: 5;
+  padding-top: 60px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 45px;
+  color: rgb(51, 84, 145);
+  position: relative;
+}
+
+.head-our-class::after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  bottom: -40px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 100px;
+  height: 11px;
+  background-color: orange; 
+}
+
+.p-our-class {
+  position: relative;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button-our-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin-top: 3rem;
+}
+.button-our-class button {
+  position: relative;
+  display: flex;
+  background-color: rgba(53, 85, 146, 1);
+  border-radius: 5px;
+  border:none;
+  padding: 5px 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.button-our-class button.linked {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: orange;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5); 
+}
+
+.button-our-class button.linked::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: orange;
+  width: 15px;
+  height: 12px;
+  clip-path: polygon(100% 0, 0 0, 53% 50%);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.classes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 70%;
+  gap: 3rem;
+}
+.section-our-class-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.section-our-class-info h3, p {
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+.section-our-class-info p {
+  font-weight:700;
+}
+
+.section-our-class-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-third {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi-calculator-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 6rem;
+}
+
+.bmi-head {
+  font-size: 40px;
+  color: rgba(53, 85, 146, 1);
+  font-weight: 700;
+}
+
+.bmi-calculator-main p {
+  font-weight: 700;
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid orange;
+  left: 6%;
+}
+
+.our-best-trainers {
+  background-color: rgb(241, 248, 255);
+  height: max-content;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem; 
+}
+
+.trainers-cards {
+  margin-top: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.trainer-card-container {
+  position: relative;
+  z-index: 2;
+}
+
+.trainer-card {
+  display: block;
+  border: solid 2px;
+  border-color: orange;
+  border-radius: 10px;
+} 
+
+.trainer-info {
+  content: "";
+  position: absolute;
+  text-align: center;
+  clip-path: polygon(0 21%, 15% 21%, 15% 0%, 85% 0%, 85% 21%, 100% 21%, 100% 78%, 85% 78%, 85% 100%, 15% 100%, 15% 78%, 0 78%);
+  background-color: rgba(53, 85, 146, 1);
+  top: 70%;
+  left: 5%;
+  width: 90%;
+  height: 6rem;
+  z-index: 5;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  color: white;
+}
+
+.beforee {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  height: 107%;
+  width: 30%;
+  background-color: rgba(53, 85, 146, 1);
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.afterr {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  height: 30%;
+  width: 107%;
+  background-color: rgba(53, 85, 146, 1);
+  z-index: -1;
+  transition: height 0.3s ease;
+}
+
+.trainer-card:hover ~ .beforee {
+  width: 60%;
+}
+
+.trainer-card:hover ~ .afterr {
+  height: 60%;
+}
+
+.trainer-card:hover ~ .trainer-info {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.purchase-from-us {
+  padding-bottom: 3rem;
+}
+
+.purchase-album {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.purchase-card {
+  border: solid 0px;
+  border-radius: 10px;
+  box-shadow: 0 0  10px 0 rgb(0, 0, 0, 0.8);
+  transition: 0.3s ease-in;
+}
+
+.purchase-card > img {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px 10px 0 0  ;
+}
+
+.purchase-info {
+  text-align: center;
+  border: solid 0;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.purchase-info > button {
+  width: 100%;
+  font-weight: 700;
+  border: 0;
+  background-color: white;
+  height: 2rem;
+  transition: 0.4s ease;
+  border: solid 0;
+  border-radius: 0 0 10px 10px ;
+}
+
+.purchase-card:hover > .purchase-info > button{
+  color: white;
+  background-color: rgb(51, 84, 145);
+}
+
+.purchase-card:hover {
+  scale: 1.05;
+}
+
+.purchase-card:hover > .purchase-info > button >i {
+  color: orange;
+}
+
+.review-client {
+  background-color: rgb(241, 248, 255);
+  padding-bottom: 5rem;
+}
+
+.all-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  padding: 2rem;
+}
+
+.client {
+ max-width: 500px;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.client-info img{
+  border-radius: 100%;
+  width: 60px;
+}
+
+.client-p {
+  background-color: rgba(53, 85, 146, 1);
+  color: white;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 13px;
+  position: relative;
+}
+
+.client-p::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(128, 150, 190);
+  left: 0;
+  top: 100%;
+  width: 40px;
+  height: 35px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.client-p::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  background-color: rgb(128, 150, 190);
+  right: 0;
+  top: 100%;
+  width: 40px;
+  height: 35px;
+}
+
+.contact-us {
+  padding-bottom: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.information {
+  width: 500px;
+}
+
+.form {
+  padding: 1rem;
+}
+
+.form > input {
+  margin: 1rem 0;
+  padding: 10px 1rem ;
+  width: 100%;
+  border: solid 0;
+  border-radius: 5px;
+  background-color: rgb(241, 248, 255);
+}
+
+.form > textarea {
+  margin: 1rem 0;
+  padding: 10px 1rem ;
+  width: 100%;
+  border: solid 0;
+  border-radius: 5px;
+  background-color: rgb(241, 248, 255);
+  color: rgb(117, 117, 117);
+}
+
+.map {
+  width: 600px;
+  height: 450px;
+}
+
+.footer-area {
+  background-color: rgb(51, 84, 145);
+  
+}
+
+.container-area {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+.container-area > p {
+  line-height: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.informationn {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.inf {
+  color: white;
+  font-weight: 500;
+}
+
+
+@media (max-width: 576px) {
+  .menu-top {
+    padding: 0 20px;
+  }
+
+  .bg-blue-media {
+    background-color: rgba(53, 85, 146, 1);
+  }
+
+  .container-media {
+    display: flex;
+  }
+
+  .main-head, .main-head-media {
+    font-size: 60px;
+  }
+
+  .main-text, .main-text-media {
+    font-size: 25px;
+  }
+
+  .collapse.navbar-collapse {
+    margin-right: 0;
+  }
+
+  .section-info {
+    flex-wrap: wrap;
+  }
+
+  .box-info {
+    margin: 20px;
+  }
+
+  .sm-ms-0 {
+    margin-left: 0px;
+  }
+
+  .flex-media-button {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .button-our-class-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .button-our-class-media button {
+    margin: 2px;
+  }
+
+  .purchase-card > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-change-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 90%;
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .bmi-calculator-main-media {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .bmi-img-media {
+    width: 100%;
+  }
+
+  .triangle-media {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid orange;
+  }
+
+  .our-best-trainers-media {
+    margin-bottom: 0;
+  }
+
+  .trainers-cards-media {
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  .trainer-card-media {
+    width: 100%;
+  } 
+
+  .head-our-class-media {
+    font-size: 30px;
+  }
+
+  .p-our-class-media {
+    width: 80%;
+  }
+
+  .purchase-album-media {
+    flex-direction: column;
+    width: 90%;
+    transform: translateX(5%);
+  }
+
+  .all-clients-media {
+    flex-direction: column;
+  }
+
+  .contact-info-media {
+    text-align: center;
+    gap: 0;
+  }
+
+  .map-media {
+    width: 95%;
+  }
+
+  .container-area-media {
+    width: 95%;
+    left: 2.5%;
+  }
+}
