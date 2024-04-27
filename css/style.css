@@ -29,14 +29,19 @@ body, html {
 }
 
 .item {
-  font-size: x-large;
+  font-size: 22px;
   font-weight: 700;
   color: white;
   margin: 2px;
   text-decoration: none;
   padding: 0 10px;
+  transition: 0.3s ease;
 }
 
+.item:hover {
+  color: orange;
+
+}
 .main-section {
   display: flex;
   flex-direction: column;

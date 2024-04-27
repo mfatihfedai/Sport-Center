@@ -77,10 +77,10 @@ function calculateBMI() {
     document.getElementById('bmi').textContent = bmi.toFixed(2);
     const triangle = document.querySelector('.triangle');
     if(bmi < 18.5){
-      const new1 = bmi + (bmi / 6);
+      const new1 = bmi + 3;
       triangle.style.left = `${new1}%`;
     } else if(bmi < 25) {
-      const new2 = bmi + (bmi / 2);
+      const new2 =bmi + ((bmi - 18.5) / 3);
       triangle.style.left = `${new2}%`;
     } else if(bmi < 30) {
       const new3 = bmi + (bmi / 2);
